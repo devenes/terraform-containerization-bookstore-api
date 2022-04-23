@@ -1,4 +1,4 @@
-# Dockerization of Python Flask Bookstore Web API with MySQL and Terraform
+# Dockerization of Python Flask Bookstore Web API with MySQL using Terraform
 
 ## Description
 
