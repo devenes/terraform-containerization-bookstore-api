@@ -62,6 +62,14 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 ## Expected Outcome
 
+- ### API Service Output
+
+  ![output](./readme-content/output_2.png)
+
+- ### Terraform Outputs
+
+  ![output](./readme-content/output_1.png)
+
 ### At the end of the project, following topics are to be covered;
 
 - MySQL Database Configuration
