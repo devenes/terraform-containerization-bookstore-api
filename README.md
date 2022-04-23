@@ -60,6 +60,8 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
   - Bookstore Web API URL should be given as output byTerraform, after the resources created.
 
+---
+
 ## Expected Outcome
 
 - ### API Service Output
@@ -69,6 +71,8 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 - ### Terraform Outputs
 
   ![output](./readme-content/output_1.png)
+
+---
 
 ### At the end of the project, following topics are to be covered;
 
@@ -109,6 +113,8 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 ## Notes
 
 - To showcase your projects REST functions, use `curl` command for each HTTP methods namely, `GET`, `POST`, `PUT`, `DELETE`.
+
+## Usage Examples
 
 ```bash
 curl --request GET \
