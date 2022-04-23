@@ -114,6 +114,8 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 - To showcase your projects REST functions, use `curl` command for each HTTP methods namely, `GET`, `POST`, `PUT`, `DELETE`.
 
+![note](./readme-content/note_1.png)
+
 ## Usage Examples
 
 ```bash
