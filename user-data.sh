@@ -17,5 +17,6 @@ curl -s --create-dirs -o "/home/ec2-user/bookstore-api/requirements.txt" -L "$FO
 curl -s --create-dirs -o "/home/ec2-user/bookstore-api/Dockerfile" -L "$FOLDER"Dockerfile
 curl -s --create-dirs -o "/home/ec2-user/bookstore-api/docker-compose.yml" -L "$FOLDER"docker-compose.yml
 cd /home/ec2-user/bookstore-api
+# Build Docker image
 docker build -t devenes/bookstore-api:latest .
 docker-compose up -d
