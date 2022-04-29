@@ -1,4 +1,4 @@
-# Dockerization of Python Flask Bookstore Web API with MySQL using Terraform
+# Containerization of Python Flask Bookstore Web API with MySQL using Docker Compose and Terraform
 
 ## Description
 
@@ -116,7 +116,11 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 ![note](./readme-content/note_1.png)
 
-## Usage Examples
+---
+
+# Usage Examples
+
+## GET
 
 ```bash
 curl --request GET \
@@ -124,9 +128,9 @@ curl --request GET \
 --header 'content-type: application/json'
 ```
 
-```bash
----POST---
+## POST
 
+```bash
 curl --request POST \
 --url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
 --header 'content-type: application/json' \
@@ -143,18 +147,18 @@ curl --request POST \
 --data '{"author":"Harper Lee", "title":"To Kill a Mockingbird", "is_sold":true}'
 ```
 
-```bash
----PUT---
+## PUT
 
+```bash
 curl --request PUT \
 --url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books/3' \
 --header 'content-type: application/json' \
 --data '{"author":"Jose Rodrigues dos Santos", "title":"A Formula de Deus", "is_sold":true}'
 ```
 
-```bash
----DELETE---
+## DELETE
 
+```bash
 curl --request DELETE \
 --url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books/2' \
 --header 'content-type: application/json'
