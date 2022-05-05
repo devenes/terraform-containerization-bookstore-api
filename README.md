@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/devenes/terraform-containerization-bookstore-api/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/devenes/terraform-containerization-bookstore-api/actions/workflows/pages/pages-build-deployment)
+
 # Containerization of Python Flask Bookstore Web API with MySQL using Docker Compose and Terraform
 
 ## Description
