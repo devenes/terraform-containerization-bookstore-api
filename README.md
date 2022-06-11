@@ -11,13 +11,7 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/terraform-containerization-bookstore-api?color=56BEB8" /> -->
 </p>
 
-<!-- Status -->
-
-<!-- <h4 align="center">
-	🚧  Terraform Containerization Bookstore Api 🚀 Under construction...  🚧
-</h4>
-
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -143,12 +137,16 @@ curl --request POST \
 --url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
 --header 'content-type: application/json' \
 --data '{"author":"Paulo Coelho", "title":"The Alchemist", "is_sold":true}'
+```
 
+```bash
 curl --request POST \
 --url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
 --header 'content-type: application/json' \
 --data '{"author":"Gabriel Garcia Marquez", "title":"One Hundred Years of Solitude", "is_sold":true}'
+```
 
+```bash
 curl --request POST \
 --url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
 --header 'content-type: application/json' \
@@ -238,7 +236,7 @@ curl --request DELETE \
 
 ## :memo: License
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
 Made with :heart: by <a href="https://github.com/devenes" target="_blank">devenes</a>
 
