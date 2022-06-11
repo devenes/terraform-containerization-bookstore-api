@@ -1,8 +1,37 @@
-[![pages-build-deployment](https://github.com/devenes/terraform-containerization-bookstore-api/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/devenes/terraform-containerization-bookstore-api/actions/workflows/pages/pages-build-deployment)
+<h1 align="center">Containerization of Python Flask Bookstore Web API with MySQL using Docker Compose and Terraform</h1>
 
-# Containerization of Python Flask Bookstore Web API with MySQL using Docker Compose and Terraform
+<p align="center">
+  <img src="https://github.com/devenes/terraform-containerization-bookstore-api/actions/workflows/pages/pages-build-deployment/badge.svg" alt="Terraform Containerization Bookstore Api" />
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/devenes/terraform-containerization-bookstore-api?color=blue">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/devenes/terraform-containerization-bookstore-api?color=pink">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/devenes/terraform-containerization-bookstore-api?color=orange">
+  <img alt="License" src="https://img.shields.io/github/license/devenes/terraform-containerization-bookstore-api?color=red">
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/devenes/terraform-containerization-bookstore-api?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/devenes/terraform-containerization-bookstore-api?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/terraform-containerization-bookstore-api?color=56BEB8" /> -->
+</p>
 
-## Description
+<!-- Status -->
+
+<!-- <h4 align="center">
+	🚧  Terraform Containerization Bookstore Api 🚀 Under construction...  🚧
+</h4>
+
+<hr> -->
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-Case-Study-Details">Case Study Details</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/devenes" target="_blank">Author</a>
+</p>
+
+<br>
+
+## :dart: About
 
 Bookstore Web API Application aims to create a bookstore web service using Docker to have the understanding to dockerization of an application. The application code is to be deployed as a RESTful web service with Flask using Dockerfile and Docker Compose on AWS Elastic Compute Cloud (EC2) Instance using Terraform.
 
@@ -10,7 +39,7 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 ![Project](./readme-content/bookstore-api.png)
 
-## Case Study Details
+## :sparkles: Case Study Details
 
 - Your team has started working on a project to create a `Bookstore` Application as Web Service.
 
@@ -64,7 +93,84 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
   - Bookstore Web API URL should be given as output byTerraform, after the resources created.
 
----
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [Python](https://www.python.org/)
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/overview/)
+- [Terraform](https://www.terraform.io/)
+- [Flask](https://flask.palletsprojects.com/)
+- [AWS](https://aws.amazon.com/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Docker](https://www.docker.com/) and [Terraform](https://www.terraform.io/) installed on your machine.
+
+## :checkered_flag: Starting
+
+```bash
+# Clone this project
+git clone https://github.com/devenes/terraform-containerization-bookstore-api
+
+# Access
+cd terraform-containerization-bookstore-api
+
+# Initialize terraform
+terraform init
+
+# Apply terraform
+terraform apply -auto-approve
+```
+
+- To showcase your projects REST functions, use `curl` command for each HTTP methods namely, `GET`, `POST`, `PUT`, `DELETE`.
+
+![note](./readme-content/note_1.png)
+
+### GET
+
+```bash
+curl --request GET \
+--url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
+--header 'content-type: application/json'
+```
+
+### POST
+
+```bash
+curl --request POST \
+--url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
+--header 'content-type: application/json' \
+--data '{"author":"Paulo Coelho", "title":"The Alchemist", "is_sold":true}'
+
+curl --request POST \
+--url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
+--header 'content-type: application/json' \
+--data '{"author":"Gabriel Garcia Marquez", "title":"One Hundred Years of Solitude", "is_sold":true}'
+
+curl --request POST \
+--url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
+--header 'content-type: application/json' \
+--data '{"author":"Harper Lee", "title":"To Kill a Mockingbird", "is_sold":true}'
+```
+
+### PUT
+
+```bash
+curl --request PUT \
+--url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books/3' \
+--header 'content-type: application/json' \
+--data '{"author":"Jose Rodrigues dos Santos", "title":"A Formula de Deus", "is_sold":true}'
+```
+
+### DELETE
+
+```bash
+curl --request DELETE \
+--url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books/2' \
+--header 'content-type: application/json'
+```
 
 ## Expected Outcome
 
@@ -75,8 +181,6 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 - ### Terraform Outputs
 
   ![output](./readme-content/output_1.png)
-
----
 
 ### At the end of the project, following topics are to be covered;
 
@@ -114,60 +218,6 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 - run the web application on AWS EC2 instance using the GitHub repo as codebase.
 
-## Notes
-
-- To showcase your projects REST functions, use `curl` command for each HTTP methods namely, `GET`, `POST`, `PUT`, `DELETE`.
-
-![note](./readme-content/note_1.png)
-
----
-
-# Usage Examples
-
-## GET
-
-```bash
-curl --request GET \
---url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
---header 'content-type: application/json'
-```
-
-## POST
-
-```bash
-curl --request POST \
---url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
---header 'content-type: application/json' \
---data '{"author":"Paulo Coelho", "title":"The Alchemist", "is_sold":true}'
-
-curl --request POST \
---url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
---header 'content-type: application/json' \
---data '{"author":"Gabriel Garcia Marquez", "title":"One Hundred Years of Solitude", "is_sold":true}'
-
-curl --request POST \
---url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books' \
---header 'content-type: application/json' \
---data '{"author":"Harper Lee", "title":"To Kill a Mockingbird", "is_sold":true}'
-```
-
-## PUT
-
-```bash
-curl --request PUT \
---url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books/3' \
---header 'content-type: application/json' \
---data '{"author":"Jose Rodrigues dos Santos", "title":"A Formula de Deus", "is_sold":true}'
-```
-
-## DELETE
-
-```bash
-curl --request DELETE \
---url 'http://ec2-52-91-247-19.compute-1.amazonaws.com/books/2' \
---header 'content-type: application/json'
-```
-
 ## Resources
 
 - [Representational State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
@@ -185,3 +235,13 @@ curl --request DELETE \
 - [pip Doc](https://pip.pypa.io/en/stable/cli/pip_install/#install-requirement)
 
 - [Flask MySQL](https://flask-mysql.readthedocs.io/en/stable/)
+
+## :memo: License
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+Made with :heart: by <a href="https://github.com/devenes" target="_blank">devenes</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
